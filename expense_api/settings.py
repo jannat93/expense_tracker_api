@@ -122,9 +122,7 @@ STATIC_URL = 'static/'
 # Render PostgreSQL database
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get("DATABASE_URL"),
-        conn_max_age=600,
-        ssl_require=True
-    )}
+        default=os.environ.get('DATABASE_URL')
+    )
+}
 
-//postgresql://expense_db_x5g4_user:I8hoypkkqfeexHDjglSjoy1LDiFAgqAD@dpg-d4q51u63jp1c739bo3ag-a.oregon-postgres.render.com/expense_db_x5g4
